@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catch That Pep</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- Page is divided into 3 sections -->
+  <!-- Section 1: switch section -->
+  <div class = "verc">
+    <h2 class = "wht">Auto Run</h2>
+    <label class="switch">
+      <input class="switch-input" type="checkbox" />
+      <span class="switch-label" data-on="Yes" data-off="No"></span>
+      <span class="switch-handle"></span>
+    </label>
+  </div>
+  <!-- Section 2: score and game section -->
+  <div class = "verc">
+    <div class = "score">
+      <h1 >
+        Score: 
+      </h1>
+      <h1 id = "sc"> 00 </h1>
+    </div>
+    <div id="game-board"></div>
+  </div>
+  <!-- Section 3: Pepcoding and name section -->
+  <div >
+    <img class = "im" src = "pep.PNG" alt = "pEp">
+    <h1 class = "rightSide">Pepcoding Hackathon Project</h1>
+    <!-- <br> -->
+    <h3 class = "name"> by Rishabh Sharma</h3>
+  </div>
+  <!-- html file is directly linked to game.js which then
+   uses the funtionalities of other js files by importing  -->
+  <script src="game.js" defer type="module"></script>
+
+</body>
+</html>
